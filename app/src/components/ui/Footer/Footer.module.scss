@@ -1,0 +1,62 @@
+.footer {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgb(36, 107, 143,0.9) 0%, rgb(40, 0, 81, 0.9) 100%);
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+
+  div {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    img {
+      width: 170px;
+      height: 30px;
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      color: white;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #246b8f;
+        width: 40px;
+        height: 40px;
+        color: white;
+        border-radius: 5px;
+        animation: neonConten 0.08s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes neonConten {
+  from {
+    box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52),
+      0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+      0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    box-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
