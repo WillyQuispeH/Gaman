@@ -1,12 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Welcome.module.scss";
 import Button from "@/components/ui/Button";
-import Logo from "@/components/ui/Logo";
 
-import { Row, Column } from "@/components/layout/Generic/Generic";
-import { Title, Body, Option } from "@/components/layout/Option";
+import { Body, Option } from "@/components/layout/Option";
 import { secctionTwo, secctionTre, secctionFor } from "@/data/welcomeData";
-import CubeAnimation from "@/components/ui/CubeAnimation";
 import CardSimple from "@/components/ui/CardSimple";
 import CardNumber from "@/components/ui/CardNumber";
 import Seccion from "@/components/layout/Seccion";

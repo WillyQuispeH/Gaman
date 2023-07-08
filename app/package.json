@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env APP_ENV=dev next dev -p 4500",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d .next"
+    "start": "cross-env APP_ENV=prod next start -p 4500",
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "20.2.5",
     "@types/react": "18.2.8",
     "@types/react-dom": "18.2.4",
     "aos": "^2.3.4",
+    "cross-env": "^7.0.3",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",
