@@ -9,7 +9,7 @@ const Template = ({ children }: any) => {
     <Screen>
       <NavBar />
       <Content>{children}</Content>
-      
+      <Footer />
     </Screen>
   );
 };

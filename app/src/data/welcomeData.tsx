@@ -73,4 +73,62 @@ const secctionFor = [
     iconText: "Cafecitos",
   },
 ];
-export { secctionTwo, secctionTre, secctionFor };
+
+const dataCardPull = [
+  {
+    img: "https://res.cloudinary.com/dh49diacu/image/upload/f_auto,q_auto/vx8hz3tgbm6oy3qdy62z",
+    text: "Diseñamos aplicaciones para móviles ya sean web, nativas o híbridas. Compatibilidad con Android y Mac Os.",
+    title: "Responsive",
+  },
+  {
+    img: "14",
+    text: "Para empresas y marcas que quieran contar con una verdadera carta de presentación frente a sus clientes",
+    title: "CORPORATIVO",
+  },
+  {
+    img: "13",
+    text: "Diseñamos hermosas landing page que convierten visitas en clientes.",
+    title: "LANDING PAGE",
+  },
+];
+
+const dataCardIcon = [
+  {
+    title: "hPre-Flight",
+    icon: "follow_the_signs",
+    colorIcon: "#280051",
+    text: "Fase de análisis inicial que identifica objetivos principales y prioridades en diseño y funcionalidades de la solución web. Todo el proceso , desde la alineación estratégica hasta la puesta en marcha de la plataforma definitiva, se lleva adelante mediante el uso de una metodología ágil de desarrollo, Scrum. ",
+  },
+  {
+    title: "Maquetación (UX-UI)",
+    icon: "devices",
+    colorIcon: "#280051",
+    text: "Diseñamos una maqueta utilizando técnicas de UX-UI de manera ágil para definir características y detalles claves de cada plataforma. Realizamos maquetación de diseño digital para portales web, sistemas de información, aplicaciones móviles y landing pages entre otras. ",
+  },
+  {
+    title: "Construcción",
+    icon: "grid_view",
+    colorIcon: "#280051",
+    text: "Considera la concreción de las tarreas críticas y necesarias para lograr los objetivos trazados para el proyecto. La medición del éxito del proyecto se considera como parte de la metodología utilizada.",
+  },
+  {
+    title: "Análisis de resultados",
+    icon: "monitoring",
+    colorIcon: "#280051",
+    text: "Análisis de información resultante de los distintos Sprints que se llevaron adelante durante la ejecución del proyecto. El resultado de este componente se considera relevante para definir mejoras y evolución de la solución. ",
+  },
+  {
+    title: "Paso a producción",
+    icon: "smb_share",
+    colorIcon: "#280051",
+    text: "Migración de la solución web desde ambiente de desarrollo a servidor de producción. En esta versión se consideran todas las configuraciones del servidor para que responda de forma óptima (caching e implementación de protocolos de seguridad)",
+  },
+  {
+    title: "Medición y estadísticas",
+    icon: "contract_edit",
+    colorIcon: "#280051",
+    text: "Generación de un panel de estadísticas que mide los indicadores claves definidos en el proyecto. Este panel es dinámico y puede ser modificado para que evolucione según demanda.",
+  },
+];
+
+export { secctionTwo, secctionTre, secctionFor, dataCardPull, dataCardIcon };

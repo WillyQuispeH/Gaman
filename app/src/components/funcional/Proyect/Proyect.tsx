@@ -12,26 +12,21 @@ import CardTestimony from "@/components/ui/CardTestimony";
 const Proyect = () => {
   const handleOnClick = (url: string) => {};
   return (
-    <Option>
-      <Body>
-        <Seccion
-          gap="25px"
-          title="¡Te damos la bienvenida a nuestro portafolio!"
-        >
-          {proyectData.map((item, key) => (
-            <CardProyect
-              key={key}
-              name={item.name}
-              url={item.url}
-              img={item.img}
-            />
-          ))}
-        </Seccion>
-        <Seccion gap="20px" title="TUS proyectos En las mejores manos!">
-          <CardTestimony />
-        </Seccion>
-      </Body>
-    </Option>
+    <>
+      <Seccion gap="25px" title="¡Te damos la bienvenida a nuestro portafolio!">
+        {proyectData.map((item, key) => (
+          <CardProyect
+            key={key}
+            name={item.name}
+            url={item.url}
+            img={item.img}
+          />
+        ))}
+      </Seccion>
+      <Seccion gap="20px" title="TUS proyectos En las mejores manos!">
+        <CardTestimony />
+      </Seccion>
+    </>
   );
 };
 

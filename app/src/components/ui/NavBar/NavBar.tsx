@@ -9,12 +9,7 @@ const NavBar = () => {
   };
   const router = useRouter();
   return (
-    <div
-      className={styles.navbar}
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-    >
+    <div className={styles.navbar}>
       <span className="material-symbols-outlined">menu</span>
 
       <img
