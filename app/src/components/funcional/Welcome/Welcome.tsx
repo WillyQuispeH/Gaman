@@ -26,17 +26,19 @@ const Welcome = () => {
     <>
       <div className={styles.welcome}>
         <div className={styles.contentTitle}>
-          <h1>
-            DESARROLLO <span>DE </span>
-          </h1>
-          <h2>
-            SISTEMAS <span>WEB </span>
-          </h2>
+          <div className={styles.title}>
+            <h1>
+              DESARROLLO <span>DE </span>
+            </h1>
+            <h2>
+              SISTEMAS <span>WEB </span>
+            </h2>
+          </div>
           <Button width="200px" text="Contactar" onClick={handleOnClick} />
         </div>
         <div className={styles.fondo}></div>
       </div>
-      <Seccion gap="20px" title="DISEÑO Y DESARROLLO WEB">
+      <Seccion gap="25px" title="DISEÑO Y DESARROLLO WEB">
         {dataCardPull.map((item, key) => (
           <CardPill
             key={key}

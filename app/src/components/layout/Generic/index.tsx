@@ -1,3 +1,3 @@
-import {Row, Column  } from "./Generic";
+import { Row, Column } from "./Generic";
 
-export default {Row, Column}
+export { Row, Column };

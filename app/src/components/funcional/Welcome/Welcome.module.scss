@@ -23,45 +23,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 50px;
     position: absolute;
+    height: 40vh;
     z-index: 2;
 
-    h1 {
-      font-size: 5em;
-      font-weight: 400;
-      font-family: "Lilita One", cursive;
-      color: #ffffff;
-      text-align: start;
-      text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-      span {
-        font-size: 0.8em;
-        font-weight: 500;
+    .title {
+      h1 {
+        font-size: 5em;
+        font-weight: 400;
         font-family: "Lilita One", cursive;
         color: #ffffff;
+        gap: 10px;
         text-align: start;
         text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 0.8em;
+          font-weight: 500;
+          font-family: "Lilita One", cursive;
+          color: #ffffff;
+          text-align: start;
+          text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+        }
       }
-    }
 
-    h2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-size: 3.8em;
-      font-weight: 800;
-      font-family: "Lilita One", cursive;
-      color: #ffffff;
-      text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-      span {
-        font-size: 2em;
-        font-weight: 500;
+      h2 {
+        line-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 3.8em;
+        font-weight: 800;
         font-family: "Lilita One", cursive;
         color: #ffffff;
-        text-align: start;
         text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+
+        span {
+          font-size: 2em;
+          font-weight: 500;
+          font-family: "Lilita One", cursive;
+          color: #ffffff;
+          text-align: start;
+          text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+        }
       }
     }
   }
@@ -90,7 +99,10 @@
 
     .contentTitle {
       width: 100%;
-      gap: 5px;
+      justify-content: center;
+      gap: 55px;
+      padding: 0;
+      height: 70vh;
       h1 {
         font-size: 6em;
         font-weight: 300;
@@ -114,23 +126,34 @@
     justify-content: center;
 
     .contentTitle {
+      padding: 0;
+      height: 70vh;
+      .title {
+        h1 {
+          font-size: 4em;
+          font-weight: 300;
+          line-height: 60px;
+          flex-direction: column;
+          gap: 0;
+          span{
+            font-size: 1em;
+          }
+        }
+        h2 {
+          span {
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: normal;
+          }
+          flex-direction: column;
+          font-size: 5em;
+          font-weight: 700;
+          line-height: 60px;
+          gap: 0;
+        }
+      }
       width: 100%;
       gap: 20px;
-      h1 {
-        font-size: 4em;
-        font-weight: 300;
-        line-height: normal;
-      }
-      span {
-        font-size: 9em;
-        font-weight: 400;
-        line-height: normal;
-      }
-      h2 {
-        font-size: 5em;
-        font-weight: 700;
-        line-height: normal;
-      }
     }
   }
 }

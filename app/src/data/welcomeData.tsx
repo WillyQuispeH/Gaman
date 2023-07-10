@@ -76,17 +76,17 @@ const secctionFor = [
 
 const dataCardPull = [
   {
-    img: "https://res.cloudinary.com/dh49diacu/image/upload/f_auto,q_auto/vx8hz3tgbm6oy3qdy62z",
+    img: "https://sirvelia.com/wp-content/uploads/2021/01/persona-usando-smartphone-1200x900.jpg",
     text: "Diseñamos aplicaciones para móviles ya sean web, nativas o híbridas. Compatibilidad con Android y Mac Os.",
     title: "Responsive",
   },
   {
-    img: "14",
+    img: "https://gestion.pe/resizer/8Oza2zkiPpVae8ifoBsC01vq-Vg=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4JYAWTAWYNALDAW5XBFAXTKXCE.jpg",
     text: "Para empresas y marcas que quieran contar con una verdadera carta de presentación frente a sus clientes",
     title: "CORPORATIVO",
   },
   {
-    img: "13",
+    img: "https://lh6.googleusercontent.com/S8JKW4Xf6pIV5PZkFERb9jwvjf4zrLdGsNuGgck91fC3NLnMzR5G2AekJaiOegsJLzDDEQgybcYisnW08Z8_dNvbULxkex6VToFZ9EH7K85jPo2PAzBw7MlUVBoOcthDP8EClneq=s0",
     text: "Diseñamos hermosas landing page que convierten visitas en clientes.",
     title: "LANDING PAGE",
   },
