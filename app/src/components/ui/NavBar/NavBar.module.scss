@@ -12,7 +12,7 @@
   padding: 0px 40px 0px 40px;
   z-index: 20;
   background: linear-gradient(90deg, rgb(36, 107, 143) 0%, rgb(40, 0, 81) 100%);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.8);
 
   @include media-xl() {
     justify-content: space-around;
@@ -53,6 +53,10 @@
       &:active {
         transform: scale(0.9);
       }
+
+      @include media-md() {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -72,7 +76,17 @@
       }
     }
     ul {
-      display: none;
+      background: linear-gradient(
+        90deg,
+        rgb(36, 107, 143) 0%,
+        rgb(40, 0, 81) 100%
+      );
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.8);
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      justify-content: space-around;
+      transition: all 2s;
     }
   }
 }

@@ -77,7 +77,7 @@ const secctionFor = [
 const dataCardPull = [
   {
     img: "https://sirvelia.com/wp-content/uploads/2021/01/persona-usando-smartphone-1200x900.jpg",
-    text: "Diseñamos aplicaciones para móviles ya sean web, nativas o híbridas. Compatibilidad con Android y Mac Os.",
+    text: "Diseñamos aplicaciones para móviles ya sean web, nativas o híbridas.",
     title: "Responsive",
   },
   {

@@ -6,7 +6,7 @@ interface ICardTestimony {}
 const CardTestimony = () => {
   return (
     <div className={styles.cardTestimony}>
-      <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" />
+      <img src="https://sirvelia.com/wp-content/uploads/2021/01/persona-usando-smartphone-1200x900.jpg" alt="" />
       <h1>
         <p>Willy Abad Quispe</p>
         <span>
