@@ -10,7 +10,6 @@ import Template from "@/components/layout/Template";
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     initializeAOS();
-    console.log("abad");
   }, []);
   return (
     <UiProvider>

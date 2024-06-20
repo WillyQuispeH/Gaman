@@ -1,4 +1,4 @@
-import { Column, Row } from "@/components/layout/Generic";
+import { Column } from "@/components/layout/Generic";
 import Seccion from "@/components/layout/Seccion";
 import Button from "@/components/ui/Button";
 import Form from "@/components/ui/Form";
@@ -6,16 +6,19 @@ import InputText from "@/components/ui/InputText";
 import TexTarea from "@/components/ui/TexTarea";
 import React, { useState } from "react";
 import styles from "./Contact.module.scss";
+
 const Contact = () => {
   const initForm = {
     name: { value: "", isValid: false },
     email: { value: "", isValid: false },
     message: { value: "", isValid: false },
   };
-  const onClick = () => {};
-  const [form, setForm] = useState(initForm);
 
-  const handleOnchange = (e: any) => {
+  const [form, setForm] = useState(initForm);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionResult, setSubmissionResult] = useState("");
+
+  const handleOnChange = (e: any) => {
     setForm({
       ...form,
       [e.target.name]: {
@@ -24,6 +27,24 @@ const Contact = () => {
       },
     });
   };
+
+  const onClick = () => {
+    if (!form.name.isValid || !form.email.isValid || !form.message.isValid) {
+      setSubmissionResult("Por favor, complete todos los campos.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmissionResult("");
+
+    // Simulación del envío del correo
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmissionResult("¡Gracias! Su mensaje ha sido enviado con éxito.");
+      setForm(initForm);
+    }, 2000);
+  };
+
   return (
     <div className={styles.contact}>
       <Seccion gap="20px" title="Contacta con nuestro equipo de ventas">
@@ -37,16 +58,15 @@ const Contact = () => {
             <Column gap="5px" width={"100%"}>
               <InputText
                 width="100%"
-                onChange={handleOnchange}
+                onChange={handleOnChange}
                 value={form.name.value}
                 type="text"
                 placeholder="Nombre"
                 name="name"
               />
-
               <InputText
                 width="100%"
-                onChange={handleOnchange}
+                onChange={handleOnChange}
                 value={form.email.value}
                 type="email"
                 placeholder="Correo electrónico"
@@ -54,13 +74,21 @@ const Contact = () => {
               />
               <TexTarea
                 width="100%"
-                onChange={handleOnchange}
+                onChange={handleOnChange}
                 value={form.message.value}
                 placeholder="Mensaje"
                 name="message"
               />
             </Column>
-            <Button text="Contactar" onClick={onClick} width="200px" />
+            <Button
+              text={isSubmitting ? "Enviando..." : "Contactar"}
+              onClick={onClick}
+              width="200px"
+              disabled={isSubmitting}
+            />
+            {submissionResult && (
+              <p className={styles.submissionResult}>{submissionResult}</p>
+            )}
           </Column>
         </Form>
       </Seccion>
