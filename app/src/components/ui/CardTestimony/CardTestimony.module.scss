@@ -26,6 +26,9 @@
     width: 330px;
     height: 100px;
     padding: 10px;
+    @include media-md() {
+      width: calc(100% - 90px);
+    }
 
     p {
       font-size: 18px;
