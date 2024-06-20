@@ -17,10 +17,12 @@ import CardImg from "@/components/ui/CardImg/CardImg";
 import CardPill from "@/components/ui/CardPill";
 import { title } from "process";
 import CardIcon from "@/components/ui/CardIcon";
+import { useRouter } from "next/router";
 
 const Welcome = () => {
+  const router = useRouter();
   const handleOnClick = () => {
-    alert("Contactar");
+    router.push("/contact");
   };
   return (
     <>
@@ -97,7 +99,6 @@ const Welcome = () => {
           />
         ))}
       </Seccion>
-      
     </>
   );
 };
