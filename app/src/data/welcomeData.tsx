@@ -20,13 +20,13 @@ const secctionTwo = [
     text: "Destaca en el mercado inmobiliario con un sitio web para corredora de propiedades. Atrae clientes y muestra tus inmuebles de manera sencilla y efectiva.",
     price: "$250.000",
   },
-  {
-    img: "https://www.emagenic.cl/img/desarrollo/medida2.jpg",
-    subtitle: "Para grandes ideas y proyectos",
-    title: "A MEDIDA",
-    text: "Obtén un sitio web hecho a medida para ti. Desarrollamos el sitio web que necesitas, completamente personalizado y adaptado a tus requerimientos.",
-    price: "$250.000",
-  },
+  // {
+  //   img: "https://www.emagenic.cl/img/desarrollo/medida2.jpg",
+  //   subtitle: "Para grandes ideas y proyectos",
+  //   title: "A MEDIDA",
+  //   text: "Obtén un sitio web hecho a medida para ti. Desarrollamos el sitio web que necesitas, completamente personalizado y adaptado a tus requerimientos.",
+  //   price: "$250.000",
+  // },
 ];
 
 const secctionTre = [
@@ -82,7 +82,7 @@ const dataCardPull = [
   },
   {
     img: "https://gestion.pe/resizer/8Oza2zkiPpVae8ifoBsC01vq-Vg=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4JYAWTAWYNALDAW5XBFAXTKXCE.jpg",
-    text: "Para empresas y marcas que quieran contar con una verdadera carta de presentación frente a sus clientes",
+    text: "Para empresas que quieran contar con una verdadera carta de presentación frente a sus clientes",
     title: "CORPORATIVO",
   },
   {

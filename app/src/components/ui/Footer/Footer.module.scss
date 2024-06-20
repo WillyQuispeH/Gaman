@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #130027;
+  background: #fff;
   box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.25);
 
   div {
@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #333;
 
     @include media-md() {
       padding: 5px 0;
@@ -28,7 +28,7 @@
       font-size: 16px;
       font-weight: 300;
       text-align: center;
-      color: white;
+      color: #333;
       @include media-md() {
         font-size: 14px;
       }
@@ -45,7 +45,7 @@
         background-color: #246b8f;
         width: 40px;
         height: 40px;
-        color: white;
+        color: #333;
         border-radius: 5px;
       }
     }

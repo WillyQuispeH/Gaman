@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .form {
   display: flex;
   align-items: center;
@@ -8,6 +10,11 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   padding: 10px;
   border-radius: 7px;
+  width: 500px;
+
+  @include media-md() {
+    width: 100%;
+  }
 }
 
 .formTitle {
@@ -19,4 +26,8 @@
   color: rgb(40, 0, 81);
   font-size: 20px;
   font-weight: 500;
+}
+
+.formBody {
+  width: 100%;
 }

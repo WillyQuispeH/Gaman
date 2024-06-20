@@ -4,56 +4,67 @@ import Button from "@/components/ui/Button";
 import Form from "@/components/ui/Form";
 import InputText from "@/components/ui/InputText";
 import TexTarea from "@/components/ui/TexTarea";
-import React from "react";
-
+import React, { useState } from "react";
+import styles from "./Contact.module.scss";
 const Contact = () => {
+  const initForm = {
+    name: { value: "", isValid: false },
+    email: { value: "", isValid: false },
+    message: { value: "", isValid: false },
+  };
   const onClick = () => {};
-  const handleOnchange = () => {};
+  const [form, setForm] = useState(initForm);
+
+  const handleOnchange = (e: any) => {
+    setForm({
+      ...form,
+      [e.target.name]: {
+        value: e.target.value,
+        isValid: e.target.value !== "" ? true : false,
+      },
+    });
+  };
   return (
-    <>
-      <Seccion gap="0px" title="Contactar">
+    <div className={styles.contact}>
+      <Seccion gap="20px" title="Contacta con nuestro equipo de ventas">
+        <h1 className={styles.title}>
+          Nuestro equipo de ventas está a tu disposición para cualquier duda.
+          Rellena el formulario y nos pondremos en contacto contigo lo antes
+          posible.
+        </h1>
         <Form title="Contacto">
-          <Column gap="15px">
-            <Column gap="5px">
-              <Row gap="5px">
-                <InputText
-                  width="200px"
-                  onChange={handleOnchange}
-                  value=""
-                  type="text"
-                  placeholder="Nombre"
-                  name=""
-                />
-                <InputText
-                  width="200px"
-                  onChange={handleOnchange}
-                  value=""
-                  type="text"
-                  placeholder="Apellidos"
-                  name=""
-                />
-              </Row>
+          <Column gap="15px" width={"100%"}>
+            <Column gap="5px" width={"100%"}>
               <InputText
-                width="405px"
+                width="100%"
                 onChange={handleOnchange}
-                value=""
+                value={form.name.value}
+                type="text"
+                placeholder="Nombre"
+                name="name"
+              />
+
+              <InputText
+                width="100%"
+                onChange={handleOnchange}
+                value={form.email.value}
                 type="email"
                 placeholder="Correo electrónico"
-                name=""
+                name="email"
               />
               <TexTarea
-                width="405px"
+                width="100%"
                 onChange={handleOnchange}
-                value=""
+                value={form.message.value}
                 placeholder="Mensaje"
-                name=""
+                name="message"
               />
             </Column>
             <Button text="Contactar" onClick={onClick} width="200px" />
           </Column>
         </Form>
       </Seccion>
-    </>
+    </div>
   );
 };
 

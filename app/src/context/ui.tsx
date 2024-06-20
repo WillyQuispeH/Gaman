@@ -2,8 +2,8 @@ import { createContext, useState } from "react";
 const UIContext = createContext<any>(null);
 
 const UiProvider = ({ children }: any) => {
-  const [sidebar, setSidebar] = useState(false);
-  
+  const [sidebar, setSidebar] = useState(true);
+
   return (
     <UIContext.Provider value={{ sidebar, setSidebar }}>
       {children}

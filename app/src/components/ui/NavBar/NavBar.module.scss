@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 60px;
+  height: 80px;
   padding: 0px 40px 0px 40px;
   z-index: 20;
-  background: linear-gradient(90deg, rgb(36, 107, 143) 0%, rgb(40, 0, 81) 100%);
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.8);
+  background: white;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 
   @include media-xl() {
     justify-content: space-around;
@@ -20,7 +20,7 @@
 
   span {
     display: none;
-    color: #ffffff;
+    color: #333;
     font-size: 35px;
     font-weight: 700;
     transition: transform 0.3s linear;
@@ -31,7 +31,7 @@
 
   img {
     cursor: pointer;
-    width: 170px;
+    width: 80px;
     transition: transform 0.3s linear;
     &:active {
       transform: scale(0.9);
@@ -45,9 +45,9 @@
     list-style: none;
 
     li {
-      color: #ffffff;
-      font-weight: 400;
-      font-size: 25px;
+      color: #333;
+      font-weight: 600;
+      font-size: 20px;
       cursor: pointer;
       transition: transform 0.3s linear;
       &:active {
@@ -61,32 +61,41 @@
   }
 }
 
+.sidebarOpen {
+  display: flex;
+  top: 80px;
+}
+
+.sidebarClosed {
+  display: none;
+  top: -100px;
+  opacity: 0;
+}
+
 @media screen and (max-width: 668px) {
   .navbar {
     justify-content: space-around;
+
     span {
       display: flex;
     }
     img {
       cursor: pointer;
-      width: 170px;
+      width: 80px;
       transition: transform 0.3s linear;
       &:active {
         transform: scale(0.9);
       }
     }
     ul {
-      background: linear-gradient(
-        90deg,
-        rgb(36, 107, 143) 0%,
-        rgb(40, 0, 81) 100%
-      );
-      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.8);
+      background: white;
       width: 100%;
       position: absolute;
+      opacity: 1;
       height: 100%;
       justify-content: space-around;
-      transition: all 2s;
+      transition: all 0.5s;
+      z-index: 19;
     }
   }
 }

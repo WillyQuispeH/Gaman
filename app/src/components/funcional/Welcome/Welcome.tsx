@@ -27,12 +27,17 @@ const Welcome = () => {
       <div className={styles.welcome}>
         <div className={styles.contentTitle}>
           <div className={styles.title}>
-            <h1>
-              DESARROLLO <span>DE </span>
-            </h1>
+            <h1>DESARROLLO DE SOFTWARE</h1>
             <h2>
-              SISTEMAS <span>WEB </span>
+              Somos una agencia digital donde mezclamos estrategia, cultura y
+              tecnología
             </h2>
+            <h3>
+              Compuesta por profesionales con más de 10 años de experiencia y
+              dispuestos a enfrentar cualquier desafío con el fin de ayudar a
+              nuestros clientes, comunicando, creando, desarrollando y diseñando
+              cada idea gracias a nuestra experiencia en el mundo digital.
+            </h3>
           </div>
           <Button width="200px" text="Contactar" onClick={handleOnClick} />
         </div>
@@ -92,6 +97,7 @@ const Welcome = () => {
           />
         ))}
       </Seccion>
+      
     </>
   );
 };
