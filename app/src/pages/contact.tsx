@@ -3,7 +3,7 @@ import HeadPages from "@/components/layout/HeadPages";
 import ScreenLoader from "@/components/layout/ScreenLoader";
 import React, { useEffect, useState } from "react";
 
-const contact = () => {
+const PageContact = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default PageContact;
