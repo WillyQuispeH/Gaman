@@ -1,11 +1,11 @@
 @import "../../../styles/variables.scss";
 .cardTestimony {
   width: 430px;
-  height: 100px;
-  background-color: white;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.55);
+  height: 150px;
+  background-color: #0a0a0a;
+  border: 1px solid #2e2e38;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   border-radius: 50px 5px 5px 50px;
   padding: 10px;
@@ -24,7 +24,7 @@
 
   h1 {
     width: 330px;
-    height: 100px;
+    height: 150px;
     padding: 10px;
     @include media-md() {
       width: calc(100% - 90px);
@@ -32,13 +32,14 @@
 
     p {
       font-size: 18px;
-      color: #666666;
+      color: #fff;
       font-weight: 500;
     }
     span {
-      font-size: 15px;
-      color: #666666;
-      font-weight: 400;
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 300;
     }
   }
 }

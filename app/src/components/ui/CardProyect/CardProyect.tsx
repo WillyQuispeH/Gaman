@@ -8,12 +8,11 @@ interface ICardProyect {
 
 const CardProyect = ({ name, url, img }: ICardProyect) => {
   return (
-    <div className={styles.cardProyect} >
+    <div className={styles.cardProyect}>
       <div className={styles.cPContent}>
         <h1>{name}</h1>
         <a href={url} target="_blank">
           <p>Visitar</p>
-          <span className="material-symbols-outlined">image</span>
         </a>
       </div>
       <img src={img} alt={name} />

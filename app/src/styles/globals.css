@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 * {
@@ -8,7 +8,7 @@
   font-family: Quicksand;
   outline: none;
   border: none;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
   color: #333333;

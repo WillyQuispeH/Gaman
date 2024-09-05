@@ -21,8 +21,20 @@ const NavBar = () => {
       <span className="material-symbols-outlined" onClick={hanOnclickNavBar}>
         menu
       </span>
-
-      <img onClick={() => onClick("/")} src="./logo.png" alt="" />
+      <div className={styles.contentLogo}>
+        <img
+          className={styles.logo}
+          onClick={() => onClick("/")}
+          src="./logoWhite.png"
+          alt=""
+        />
+        <img
+          className={styles.name}
+          onClick={() => onClick("/")}
+          src="./namewhite.png"
+          alt=""
+        />
+      </div>
       <span
         className="material-symbols-outlined"
         onClick={() => {

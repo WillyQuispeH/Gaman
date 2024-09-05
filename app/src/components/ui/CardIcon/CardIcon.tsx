@@ -13,12 +13,7 @@ const CardIcon = ({ title, icon, colorIcon, text }: ICardIcon) => {
       <h2>{title}</h2>
 
       <div className={styles.cardIconConten}>
-        <span
-          style={{ color: colorIcon }}
-          className="material-symbols-outlined"
-        >
-          {icon}
-        </span>
+        {/* <span className="material-symbols-outlined">{icon}</span> */}
         <p>{text}</p>
       </div>
     </div>

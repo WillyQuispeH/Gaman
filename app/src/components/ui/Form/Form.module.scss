@@ -5,9 +5,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #f7fafc;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #0a0a0a;
+  border: 1px solid #2e2e38;
   padding: 10px;
   border-radius: 7px;
   width: 500px;
@@ -23,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(40, 0, 81);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
 }
